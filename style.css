@@ -52,6 +52,11 @@ a{
     top: 0px;
     color: rgb(255, 255, 255);
 }
+
+.titulo:hover{
+    color: sandybrown;
+    transition: all 1s;
+}
 /* Comienzo de la Barra de Navegacion */
 .navegacion{
     list-style: none;
@@ -74,10 +79,12 @@ a{
     display: block;
     text-decoration: none;
     font-size: 20px;
+    transition: all 1s;
 }
 
 .navegacion__item:hover{
     color: sandybrown;
+    transform: scale(1.2);
 }
 /* Comienzo del Main */
 main{
@@ -187,16 +194,28 @@ footer{
 .footer__h3__ul__item__w{
     width: 40px;
     height: 40px;
+    transition: all 2s;
+}
+.footer__h3__ul__item__w:hover{
+    transform: scale(1.3);
 }
 /* Imagen de Instagram */
 .footer__h3__ul__item__i{
     width: 70px;
     height: 70px;
+    transition: all 2s;
+}
+.footer__h3__ul__item__i:hover{
+    transform: scale(1.3);
 }
 /* Imagen de Facebook */
 .footer__h3__ul__item__f{
     width: 50px;
     height: 50px;
+    transition: all 2s;
+}
+.footer__h3__ul__item__f:hover{
+    transform: scale(1.3);
 }
 
 form{
@@ -238,7 +257,8 @@ form{
     margin: 20px 20px;
     display: flex;
     float: left;
-    justify-content: space-between; 
+    justify-content: space-between;
+    transition: all 2s;
 }
 
 .contenedor__imagenes__img{
@@ -249,8 +269,11 @@ form{
     background-color: #d6d3d3;
     border: solid 1px rgb(226, 217, 236);
     border-radius: 10px;
+    transition: all 5s;
 }
-
+.contenedor__imagenes__img:hover{
+    transform: scale(1.5);
+}
 .pregunta__h2{
     font-size: 30px;
     font-weight: 550;
