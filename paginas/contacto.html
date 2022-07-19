@@ -12,7 +12,7 @@
     <title>¡Contactanos!</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <!-- Logo -->
         <a href="../index.html" class="logo__titulo">
             <img src="../multimedia/logo.png" alt="Logo de: Tú Percha" class="logo">
@@ -20,14 +20,21 @@
             <h1 class="titulo">Tú Percha</h1>
         </a>
         <!-- Barra de Navegacion -->
-        <nav class="nav">
-            <ul class="navegacion">
-               <li><a href="../index.html" class="navegacion__item">Home</a></li>
-               <li><a href="./productos.html" class="navegacion__item">Productos</a></li>
-               <li><a href="./ubicacion.html" class="navegacion__item">Donde Encontrarnos</a></li>
-               <li><a href="./preguntas-frecuentes.html" class="navegacion__item">Preguntas Frecuentes</a></li>
-               <li><a href="#" class="navegacion__item">¡Contactanos!</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg nav">
+            <div class="container-fluid bootstrap">
+              <button class="navbar-toggler bg-light boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="navegacion__item" href="../index.html">Home</a>
+                  <a class="navegacion__item" href="../paginas/productos.html">Productos</a>
+                  <a class="navegacion__item" href="./ubicacion.html">¿Donde nos Encontras?</a>
+                  <a class="navegacion__item" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                  <a class="navegacion__item" href="./contacto.html">¡Contactanos!</a>
+                </div>
+              </div>
+            </div>
         </nav>
     </header>
     <main>

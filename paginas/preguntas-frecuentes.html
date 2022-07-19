@@ -12,7 +12,7 @@
     <title>Preguntas Frecuentes</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <!-- Logo -->
         <a href="../index.html" class="logo__titulo">
             <img src="../multimedia/logo.png" alt="Logo de: Tú Percha" class="logo">
@@ -20,34 +20,64 @@
             <h1 class="titulo">Tú Percha</h1>
         </a>
         <!-- Barra de Navegacion -->
-        <nav class="nav">
-            <ul class="navegacion">
-               <li><a href="../index.html" class="navegacion__item">Home</a></li>
-               <li><a href="./productos.html"class="navegacion__item">Productos</a></li>
-               <li><a href="./ubicacion.html"class="navegacion__item">Donde Encontrarnos</a></li>
-               <li><a href="#" class="navegacion__item">Preguntas Frecuentes</a></li>
-               <li><a href="./contacto.html" class="navegacion__item">¡Contactanos!</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg nav">
+            <div class="container-fluid bootstrap">
+              <button class="navbar-toggler bg-light boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="navegacion__item" href="../index.html">Home</a>
+                  <a class="navegacion__item" href="../paginas/productos.html">Productos</a>
+                  <a class="navegacion__item" href="./ubicacion.html">¿Donde nos Encontras?</a>
+                  <a class="navegacion__item" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                  <a class="navegacion__item" href="./contacto.html">¡Contactanos!</a>
+                </div>
+              </div>
+            </div>
         </nav>
     </header>
     <main>
+        
         <!-- Respuestas a Consltas -->
         <h2 class="subtitulo">¡Respuesta a tus Dudas!</h2>
-        <section class="pregunta">
+        <div class="accordion accordion-flush preguntas" id="accordionFlushExample">
             <!-- Pregunta 1 -->
-            <h2 class="pregunta__h2">Lorem, ipsum dolor.?</h2>
-            <p class="pregunta__h2__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptas nobis similique quaerat laudantium optio aut ipsum architecto, possimus repellendus mollitia ipsam suscipit qui totam aliquid doloremque, corporis dignissimos ea! Et pariatur facere assumenda velit, culpa consectetur laborum suscipit quos.</p>
-        </section>
-        <section>
+            <div class="accordion-item acordion">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed boton_preguntas" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  ¿Donde los encuentro?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body acordion">
+                    <p>Tenemos un apartado completamente con toda la informacion que necesitas saber para llegar a nuestra tienda en fisico, para ir <a href="./ubicacion.html">Preciona Aqui</a></p>
+                </div>
+              </div>
+            </div>
             <!-- Pregunta 2 -->
-            <h2 class="pregunta__h2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quod, itaque est id a in! Debitis fugit dolores aperiam perspiciatis maiores aut natus sapiente nihil, iste quas repellendus quos adipisci?</h2>
-            <p class="pregunta__h2__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolores tempora quos error, ex distinctio, excepturi veritatis possimus ab nisi iure? Quis quia, tempore praesentium ea sunt doloribus cum. Odit?</p>
-        </section>
-        <section>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed boton_preguntas" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body acordion">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
             <!-- Pregunta 3 -->
-            <h2 class="pregunta__h2">Lorem ipsum dolor sit amet.</h2>
-            <p class="pregunta__h2__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam obcaecati quam aperiam sed sequi harum consectetur a tempore vero assumenda praesentium, neque odio voluptatem nulla nostrum. Debitis labore in ratione veniam facere!</p>
-        </section>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed boton_preguntas" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body acordion">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+          </div>
     </main>
     <footer>
         <!-- Footer -->
