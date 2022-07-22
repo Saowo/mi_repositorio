@@ -1,12 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 /* Comienzo del Body */
 body{
     font-family: 'Oswald', sans-serif;
-    background-color: #e2d9d9;
+    background-color: $color-de-fondo;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -23,6 +18,9 @@ body{
 }
 #main{
     position:inherit;
+}
+main{
+    background-color: $color-de-fondo;
 }
 /* Titulo y Logo */
 .logo__titulo{
@@ -60,21 +58,8 @@ a{
     color: sandybrown;
     transition: all 1s;
 }
-/* Comienzo de la Barra de Navegacion */
-.navegacion{
-    list-style: none;
-    padding: 0px;
-    max-width: 1000px;
-    margin: auto;
-    text-decoration: none;
-}
 
-.navegacion li{
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-}
-
+/* Navegacion */
 .navegacion__item{
     text-align: none;
     color: rgb(255, 255, 255);
@@ -83,17 +68,13 @@ a{
     text-decoration: none;
     font-size: 20px;
     transition: all 1s;
+    
+        .hover{
+        color: sandybrown;
+        transform: scale(1.2);
+        }
 }
 
-.navegacion__item:hover{
-    color: sandybrown;
-    transform: scale(1.2);
-}
-/* Comienzo del Main */
-main{
-    background-color: #e2d9d9;
-}
-/* Subtitulo En el Main */
 .subtitulo{
     text-align: center;
     font-size: 70px;
@@ -101,62 +82,7 @@ main{
     margin-top: 0px;
     padding: 0%;
 }
-/* Contenedor de Imagen */
-.fondo{
-    margin: 10px;
-    padding: 10px;
-}
-/* Imagen Superior */
-.fondo__1{
-    width: 500px;
-    height: 490px;
-    padding: 10px 10px 10px 10px;
-    margin: 0px;
-    float: left;
-    border-radius: 15px;
-}
-/* Texto */
-.textomain{
-    text-align: justify;
-    font-size: 25px;
-    padding: 10px;
-    }
-/* Imagen inferior */
-.ultimamoda{
-    float: right;
-}
 
-.ultimamoda__img{
-    float: right;
-    width: 700px;
-    height: 390px;
-    padding: 10px;
-    margin: 0px 10px;
-    border-radius: 15px;
-}
-/* Texto de Imagen Inferior */
-.h3__moda{
-    text-align: center;
-    color: #000000;
-    font-size: 50px;
-    font-weight: 300;
-    margin: 0px;
-}
-
-.ultimamoda__p{
-    text-align: center;
-    color: #000000;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.ultimamoda__p2{
-    margin: 0px;
-    padding: 0px;
-    text-align: right;
-    color: #000000;
-    font-size: 13px;
-}
 /* Comienzo del Footer */
 footer{
     background-color: #000000;
@@ -168,26 +94,25 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    Flex-direction: column;
+    flex-direction: column;
     text-align: center;
+
+    .h3{
+        font-size: 30px;
+        color: #aeabab;
+        text-align: center;
+            ul{
+                list-style: none;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                    li{
+                        margin: 0 10px;
+                    }
+            }
+    }
 }
 
-.footer__h3{
-    font-size: 30px;
-    color: #aeabab;
-    text-align: center;
-}
-
-.footer__h3__ul{
-    list-style: none;
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
-.footer__h3__ul li{
-    margin: 0 10px;
-}
 /* Copytight */
 .copyright{
     color: #aeabab;
@@ -199,25 +124,25 @@ footer{
     width: 40px;
     height: 40px;
     transition: all 2s;
-}
-.footer__h3__ul__item__w:hover{
-    transform: scale(1.3);
+    &__:hover{
+        transform: scale(1.3);
+    }
 }
 /* Imagen de Instagram */
 .footer__h3__ul__item__i{
     width: 70px;
     height: 70px;
     transition: all 2s;
-}
-.footer__h3__ul__item__i:hover{
-    transform: scale(1.3);
+    &_:hover{
+        transform: scale(1.3);
+    }
 }
 /* Imagen de Facebook */
 .footer__h3__ul__item__f{
     width: 50px;
     height: 50px;
     transition: all 2s;
-}
-.footer__h3__ul__item__f:hover{
-    transform: scale(1.3);
+    &_:hover{
+        transform: scale(1.3);
+    }
 }

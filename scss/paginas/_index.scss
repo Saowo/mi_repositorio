@@ -1,0 +1,57 @@
+/* INDEX */
+/* Contenedor de Imagen */
+.fondo{
+    margin: 10px;
+    padding: 10px;
+}
+/* Imagen Superior */
+.fondo__1{
+    width: 500px;
+    height: 490px;
+    padding: 10px 10px 10px 10px;
+    margin: 0px;
+    float: left;
+    border-radius: 15px;
+}
+/* Texto */
+.textomain{
+    text-align: justify;
+    font-size: 25px;
+    padding: 10px;
+    }
+/* Imagen inferior */
+.ultimamoda{
+    float: right;
+}
+
+.ultimamoda__img{
+    float: right;
+    width: 700px;
+    height: 390px;
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 15px;
+}
+/* Texto de Imagen Inferior */
+.h3__moda{
+    text-align: center;
+    color: #000000;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.ultimamoda__p{
+    text-align: center;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.ultimamoda__p2{
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+    color: #000000;
+    font-size: 13px;
+}
