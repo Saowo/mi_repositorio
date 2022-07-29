@@ -1,0 +1,6 @@
+@mixin moda ($size, $color, $weight){
+    text-align: center;
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}

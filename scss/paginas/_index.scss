@@ -1,8 +1,15 @@
 /* INDEX */
+@import "./base/variables";
+@import "./base/extend";
 /* Contenedor de Imagen */
 .fondo{
     margin: 10px;
     padding: 10px;
+}
+/* Subtitulo */
+
+.subtitulo__Index{
+    @extend %subtitulo;
 }
 /* Imagen Superior */
 .fondo__1{
@@ -34,11 +41,7 @@
 }
 /* Texto de Imagen Inferior */
 .h3__moda{
-    text-align: center;
-    color: #000000;
-    font-size: 50px;
-    font-weight: 300;
-    margin: 0px;
+    @include moda (50px ,#000000, 300)
 }
 
 .ultimamoda__p{
