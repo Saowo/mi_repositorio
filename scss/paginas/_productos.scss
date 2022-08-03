@@ -1,0 +1,39 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 250px ; */
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+
+}
+.balenciaga{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.veneta{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.vuitton{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.prada{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+@media (max-width: 885px){
+    .contenedor{
+        grid-template-columns: repeat(2, 25%);
+        justify-content: space-between;
+        padding: 50px;
+    }
+
+}

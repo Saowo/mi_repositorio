@@ -1,4 +1,8 @@
 @import "./base/variables";
-@import "general";
+@import "../scss/generales/header";
+@import "../scss/generales/main";
+@import "../scss/generales/footer";
 @import "./paginas/index";
-@import "./base/variables";
+@import "./paginas/contacto";
+@import "./paginas/productos";
+@import "./paginas/ubicacion";
